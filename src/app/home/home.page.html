@@ -12,7 +12,7 @@
 
   <ion-list>
 
-    <ion-item *ngFor="let pokemon of listaPokemonFiltrada" lines="full" class="ion-no-padding" routerLink="/bulbasaur">
+    <ion-item *ngFor="let pokemon of listaPokemonFiltrada" lines="full" class="ion-no-padding" (click)="abrirPokemon(pokemon)">
       <ion-thumbnail slot="start">
         <img [src]="pokemon.foto">
       </ion-thumbnail>
